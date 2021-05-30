@@ -18,7 +18,9 @@
         "tmp": "^0.2.1"
     },
     "scripts": {
-        "test": "jest"
+        "test": "jest --config test.jest.config.js",
+        "test:ci": "jest",
+        "test:initdb": "./test/initdb.sh"
     },
     "author": "Dave Jones",
     "license": "Apache",
