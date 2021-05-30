@@ -40,7 +40,7 @@ jobs:
     - name: Grant database privileges
       run: mysql -host 127.0.0.1 --port 3306 -u root -p aggrivate_test -e "GRANT ALL ON *.* TO 'aggrivate_test'@'%' with grant option; FLUSH PRIVILEGES;"
     - name: Setup Database
-    - run: mysql -u $MYSQL_USER -p $MYSQL_PASSWORD < "test/initdb.sql"; 
+      run: mysql -u $MYSQL_USER -p $MYSQL_PASSWORD < "test/initdb.sql"; 
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
       with:
