@@ -71,4 +71,4 @@ CREATE TABLE `newsfeeds` (
   KEY `item_count` (`item_count`),
   KEY `podcast_locked` (`podcast_locked`),
   KEY `podcast_owner` (`podcast_owner`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
