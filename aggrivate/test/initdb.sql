@@ -1,5 +1,5 @@
-CREATE DATABASE aggregator_test;
-USE aggregator_test;
+CREATE DATABASE aggrivate_test;
+USE aggrivate_test;
 CREATE TABLE `newsfeeds` (
   `id` bigint NOT NULL AUTO_INCREMENT,
   `title` varchar(768) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL DEFAULT '',
