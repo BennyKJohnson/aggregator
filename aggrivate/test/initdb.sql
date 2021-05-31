@@ -1,4 +1,3 @@
-CREATE DATABASE aggrivate_test;
 USE aggrivate_test;
 CREATE TABLE `newsfeeds` (
   `id` bigint NOT NULL AUTO_INCREMENT,
