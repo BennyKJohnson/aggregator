@@ -38,7 +38,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Grant database privileges
-      run: mysql --port 3306 -u root -p aggrivate_test --execute "GRANT ALL ON *.* TO 'aggrivate_test'@'%' with grant option; FLUSH PRIVILEGES;"
+      run: mysql --port 3306 -u root -paggrivate_test --execute "GRANT ALL ON *.* TO 'aggrivate_test'@'%' with grant option; FLUSH PRIVILEGES;"
     - name: Setup Database
       run: mysql -u $MYSQL_USER -p $MYSQL_PASSWORD < "test/initdb.sql"; 
     - name: Use Node.js ${{ matrix.node-version }}
